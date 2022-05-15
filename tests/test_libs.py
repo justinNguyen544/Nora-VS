@@ -58,3 +58,31 @@
 #     audio = recognizer.listen(source)
 #     command = recognizer.recognize_google(audio)
 #     print(command)
+
+# ----------------------------------------------------------------
+# from datetime import datetime
+# import time
+# from time import gmtime, strftime
+
+# # Getting Today's Datetime
+# today = datetime.now()
+  
+# # Accessing Attributes
+# print("Day: ", today.day)
+# print("Month: ", today.month)
+# print("Year: ", today.year)
+# print("Hour: ", today.hour)
+# print("Minute: ", today.minute)
+# print("Second: ", today.second)
+# print("Time is now: {} Hour, {} Minute, {} Second".format(today.hour, today.minute, today.second))
+
+# start = time.time()
+# print("It is " + str(start))
+# print(time.gmtime(0))
+# using simple format of showing time
+# curr = time.time()
+# s = strftime("%a, %d %b %Y %H:%M:%S", gmtime(curr))
+# print(s)
+
+
+# ---------------------------------------------------------------

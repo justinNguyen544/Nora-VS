@@ -24,14 +24,11 @@ with sr.Microphone() as source:
         audio = r.listen(source)
 
         # Recognizer speech using Google as a service: online
-        text = r.recognize_google(audio)
+        google = r.recognize_google(audio)
+        sphinx = r.recognize_sphinx(audio)
+        print("Google: {}\n\nSphinx: {}".format(google, sphinx))
+        
+        if "bye" in google:
+            break
 
-        print(text)
-        if "bye" in text:
-            break
-        elif str(text).lower() == "what time is":
-            print("It is:")
-            break
-        elif str(text).lower() == "what is today":
-            print("Today is ")
-            break
+        
